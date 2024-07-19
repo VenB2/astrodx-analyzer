@@ -181,4 +181,21 @@
   <noscript>
     <img src="https://backdrop-dealt-satiable.goatcounter.com/count?p=/astrodx-analyzer">
   </noscript>
+  <script>
+    document.getElementById('cache-input').addEventListener('change', function(event) {
+      // Assuming a function processFile exists and sets tsvRows
+      // Replace `processFile` and `tsvRows` with your actual data processing logic and data variable
+      processFile(event.target.files[0]).then(() => {
+        if (tsvRows.length > 0) {
+          exportToTsv(tsvRows);
+        }
+      });
+    });
+    
+    // Example processFile function (replace with your actual logic)
+    async function processFile(file) {
+      // Your file processing logic here
+      // Update tsvRows based on the file content
+    }
+    </script>
 </body>
