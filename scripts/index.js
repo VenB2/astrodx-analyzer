@@ -271,10 +271,10 @@
       // return;
     }
 
-    if (content.length === 0) {
-      $data.status = "No charts found.";
-      return;
-    }
+    // if (content.length === 0) {
+    //   $data.status = "No charts found.";
+    //   return;
+    // }
 
     $data.status = "Loading internal level data...";
     const magicCharts = await loadMagic(version);
