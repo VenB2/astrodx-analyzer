@@ -400,6 +400,8 @@
     $data.status = "";
   };
 
+  this.exportToTsv($data.tsvRows);
+
   scope.exportToTsv = function (rows) {
     const header = ["category", "title", "artist", "charter", "type", "difficulty", "level", "clear", "maxcombo", "tries", "cleared_plays", "complete_plays", "total_notes", "critical", "perfect", "great", "good", "achievement", "rank", "rating"];
     const tsvRows = rows.map((row) => row.join("\t"));
