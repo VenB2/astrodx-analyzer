@@ -266,9 +266,9 @@
           break;
       }
     } catch (e) {
-      $data.status = `Failed to decrypt file. Are you on iOS?<br />
-      Detailed error: <code>${e.message}</code>`;
-      return;
+      // $data.status = `Failed to decrypt file. Are you on iOS?<br />
+      // Detailed error: <code>${e.message}</code>`;
+      // return;
     }
 
     if (content.length === 0) {
